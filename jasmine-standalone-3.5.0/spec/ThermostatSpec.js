@@ -17,5 +17,9 @@ describe('Thermostat', function() {
     it('by increasing it', function() {
       expect(thermostat.increaseTemperature(10)).toEqual(30);
     });
+
+    it('by decreasing it', function() {
+      expect(thermostat.decreaseTemperature(10)).toEqual(10);
+    });
   });
 });
