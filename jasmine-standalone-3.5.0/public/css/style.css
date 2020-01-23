@@ -1,11 +1,27 @@
+html,
+body {
+    height: 100%;
+    font-weight: 800;
+    /* background-color: purple; */
+    background-image: url("https://media3.giphy.com/media/PlgZiX7xo0NdiR8489/source.gif");
+}
+
+body {
+    text-align: center;
+}
+
 .low-usage {
-  color: green;
+    color: green;
 }
 
 .medium-usage {
-  color: black;
+    color: black;
 }
 
 .high-usage {
-  color: red;
+    color: red;
+}
+
+#current-temp-header {
+    color: white;
 }

@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Thermostat</title>
-    <link type='text/css' rel='stylesheet' href='/Users/riapatel/makers/week-5/thermostat/jasmine-standalone-3.5.0/public/css/style.css'>
-  </head>
-  <body>
+    <link type="text/css" rel="stylesheet" href="/ria-thermostat-challenge/thermostat/jasmine-standalone-3.5.0/public/css/style.css" />
+</head>
+
+<body>
     <script src="jquery-3.4.1.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
     <section>
-      <h1>Current temperature: <span id='current-temp'></span></h1>
-      <h1>Current city: <span id='city'></span></h1>
-      <h2>Pick a city:</h2>
-      <select id='current-city'>
+        <h1>
+            <div id="current-temp-header">
+                Current temperature:
+            </div>
+            <span id="current-temp"></span>
+        </h1>
+        <h1>Current city: <span id="city"></span></h1>
+        <h2>Pick a city:</h2>
+        <select id="current-city">
         <option value="london">London</option>
         <option value="mumbai">Mumbai</option>
         <option value="gary">Gary</option>
@@ -19,18 +26,19 @@
       </select>
     </section>
     <section>
-      <h1 id="temperature"></h1>
-      <p>
-        <data id='weather'></data>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status">on</span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
-      </p>
+        <h1 id="temperature"></h1>
+        <p>
+            <data id="weather"></data>
+            <button id="temperature-up">+</button>
+            <button id="temperature-down">-</button>
+            <button id="temperature-reset">reset</button> power saving mode is
+            <span id="power-saving-status">on</span>
+            <button id="powersaving-on">PSM on</button>
+            <button id="powersaving-off">PSM off</button>
+        </p>
     </section>
     <script src="jasmine-standalone-3.5.0/src/thermostat.js"></script>
     <script src="jasmine-standalone-3.5.0/src/interface.js"></script>
-  </body>
+</body>
+
 </html>
